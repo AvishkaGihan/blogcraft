@@ -1,4 +1,4 @@
-import BlogList from "../components/BlogList";
+import BlogList from "@/components/BlogList";
 import { getSortedPostsData } from "@/lib/posts";
 
 export default function Home() {

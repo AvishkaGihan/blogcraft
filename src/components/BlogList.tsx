@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import { format } from "date-fns";
 
 type Post = {
   slug: string;
@@ -11,7 +11,7 @@ type BlogListProps = {
   posts: Post[];
 };
 
-const BlogList = ({ posts }: BlogListProps) => {
+export default function BlogList({ posts }: BlogListProps) {
   return (
     <ul className="space-y-4">
       {posts.map((post) => (
@@ -22,10 +22,11 @@ const BlogList = ({ posts }: BlogListProps) => {
           >
             {post.title}
           </Link>
+          <p className="text-gray-500 text-sm mt-1">
+            {format(new Date(post.date), "MMMM d, yyyy")}
+          </p>
         </li>
       ))}
     </ul>
   );
-};
-
-export default BlogList;
+}

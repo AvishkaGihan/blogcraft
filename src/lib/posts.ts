@@ -12,11 +12,12 @@ export function getSortedPostsData() {
     const slug = fileName.replace(/\.md$/, "");
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
+
     const matterResult = matter(fileContents);
 
     return {
       slug,
-      ...(matterResult.data as { date: string; title: string }),
+      ...(matterResult.data as { date: string; title: string; image: string }),
     };
   });
 
@@ -43,7 +44,9 @@ export function getAllPostSlugs() {
 export async function getPostData(slug: string) {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
+
   const matterResult = matter(fileContents);
+
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
@@ -52,6 +55,6 @@ export async function getPostData(slug: string) {
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    ...(matterResult.data as { date: string; title: string; image: string }),
   };
 }

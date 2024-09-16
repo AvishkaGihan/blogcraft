@@ -1,6 +1,7 @@
 ---
 title: "Hello, World!"
 date: "2024-03-16"
+image: "/images/hello-world.jpg"
 ---
 
 Welcome to my first blog post using Next.js and Markdown!

@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: 250, 250, 250;
+  --foreground: 34, 34, 34;
+  --accent: 59, 130, 246;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-light mb-6;
+  }
+  h2 {
+    @apply text-2xl font-light mb-4;
+  }
+  h3 {
+    @apply text-xl font-light mb-3;
+  }
+  a {
+    @apply text-blue-500 hover:underline;
+  }
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-sm hover:bg-blue-600 transition-colors;
+  }
+}
+
+.prose img {
+  @apply rounded-sm shadow-sm;
+}
+
+.prose a {
+  @apply text-blue-500 hover:underline;
+}
+
+.prose ul {
+  @apply list-disc pl-5 mb-4;
+}
+
+.prose ol {
+  @apply list-decimal pl-5 mb-4;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}

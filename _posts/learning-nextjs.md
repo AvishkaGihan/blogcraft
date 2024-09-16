@@ -1,6 +1,7 @@
 ---
 title: "Learning Next.js 14"
 date: "2024-03-17"
+image: "/images/learning-nextjs.jpg"
 ---
 
 Next.js 14 brings some exciting new features and improvements. Here are some of the things I'm most excited about:

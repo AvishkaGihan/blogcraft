@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BlogCraft: A Next.js Powered Blog
+
+BlogCraft is a modern, responsive blog built with Next.js 14, featuring Markdown support and optimized performance.
+
+![BlogCraft Homepage](/public/screenshots/home.jpg)
+
+## Features
+
+- Built with **Next.js 14** and **React**
+- Utilizes the **new App Router** for improved performance
+- **Markdown support** for easy content creation
+- Optimized **font loading** with `next/font`
+- **Responsive design** for all devices
+- Styled with **Tailwind CSS**
 
 ## Getting Started
 
@@ -16,21 +29,42 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+_posts/            # Contains Markdown files for blog posts
+src/app/           # Next.js app directory
+src/components/    # React components
+src/lib/           # Utility functions, including Markdown processing
+```
+
+## Screenshots
+
+- **Homepage**
+  ![Homepage Screenshot](/public/screenshots/home.jpg)
+- **Blog Post**
+  ![Blog Post Screenshot](/public/screenshots/blog-post.jpg)
+- **Home Mobile View**
+  ![Mobile View Screenshot Of Home](/public/screenshots/mobile-home.jpg)
+- **Home Mobile View**
+  ![Mobile View Screenshot Of Blog Post](/public/screenshots/mobile-blog-post.jpg)
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This project is optimized for deployment on Vercel. Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](./LICENSE).

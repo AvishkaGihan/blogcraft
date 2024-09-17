@@ -6,7 +6,7 @@ BlogCraft is a modern, responsive blog built with Next.js 14, featuring Markdown
 
 ## Features
 
-- Built with **Next.js 14** and **React**
+- Built with **Next.js 14**
 - Utilizes the **new App Router** for improved performance
 - **Markdown support** for easy content creation
 - Optimized **font loading** with `next/font`
@@ -61,7 +61,6 @@ src/lib/           # Utility functions, including Markdown processing
 To learn more about the technologies used in this project, check out the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs)
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
 ## Deployment

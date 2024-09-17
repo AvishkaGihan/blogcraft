@@ -42,12 +42,19 @@ src/lib/           # Utility functions, including Markdown processing
 
 - **Homepage**
   ![Homepage Screenshot](/public/screenshots/home.jpg)
+  _A clean and modern homepage design showcasing featured blog posts_
+
 - **Blog Post**
   ![Blog Post Screenshot](/public/screenshots/blog-post.jpg)
-- **Home Mobile View**
-  ![Mobile View Screenshot Of Home](/public/screenshots/mobile-home.jpg)
-- **Home Mobile View**
-  ![Mobile View Screenshot Of Blog Post](/public/screenshots/mobile-blog-post.jpg)
+  _An individual blog post page with easy-to-read typography and intuitive navigation_
+
+- **Mobile View - Homepage**
+  ![Mobile View Screenshot of Home](/public/screenshots/mobile-home.jpg)
+  _Responsive design optimized for mobile devices, ensuring a seamless experience on smaller screens_
+
+- **Mobile View - Blog Post**
+  ![Mobile View Screenshot of Blog Post](/public/screenshots/mobile-blog-post.jpg)
+  _Mobile-friendly blog post layout, maintaining readability and functionality on smartphones_
 
 ## Learn More
 
